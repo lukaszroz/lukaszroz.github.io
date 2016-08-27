@@ -22,7 +22,7 @@ hugo
 # push the static web content to gh-pages
 if [ "$DRONE" == "true" ]; then
   echo "...push it"
-  ../deploy.sh
+  ./deploy.sh
 else
   echo "...local, don't push"
   xdg-open http://localhost:1313/
