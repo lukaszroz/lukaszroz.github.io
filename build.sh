@@ -9,22 +9,13 @@ set -e
 # update themes submodules
 git submodule update --init --recursive
 
-# fetch hugo and show version in build log
-if [ "$DRONE" == "true" ]; then
-  go get -u -v github.com/spf13/hugo
-fi
-hugo version
+# download hugo 0.16 release
+curl -L -o /tmp/hugo_$HUGO.tgz https://github.com/spf13/hugo/releases/download/v0.16/hugo_$HUGO.tgz
+tar xvf /tmp/hugo_$HUGO.tgz -C /tmp/hugo_$HUGO
+mv /tmp/hugo_$HUGO/hugo /usr/bin/hugo
 
 # build the static web content
-rm -fr ./public
 hugo
 
 # push the static web content to gh-pages
-if [ "$DRONE" == "true" ]; then
-  echo "...push it"
-  ./deploy.sh
-else
-  echo "...local, don't push"
-  xdg-open http://localhost:1313/
-  hugo server --buildDrafts
-fi
+./deploy.sh
