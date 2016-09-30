@@ -5,20 +5,19 @@ languageCode = "en-us"
 theme = "academic"
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = "spf13"
+# disqusShortname = "spf13"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+# googleAnalytics = ""
 
 
 [params]
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
-  organization = "Stanford University"
+  name = "Lukasz Rozycki EIT"
+  role = "Software Engineer"
+# organization = "Academy Petroleum Industries"
   avatar = "portrait.jpg"
-  email = "test@example.org"
-  address = "Stanford AI Lab, Stanford University, California, 90210, USA."
-  phone = "888 888 88 88"
+  email = "lukasz@lukaszr.com"
+  address = "Edmonton, Alberta, Canada."
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -37,24 +36,14 @@ googleAnalytics = ""
   # Biography section.
   # Section will only be displayed if `content/home/about.md` exists.
   [params.about]
-    interests = ["Artificial Intelligence", "Computational Linguistics", "Information Retrieval"]
+    interests = ["Software Engineering", "Programming Languages", "Big Data"]
     str_interests = "Interests"
     str_education = "Education"
 
     [[params.about.education]]
-      course = "PhD in Artificial Intelligence"
-      institution = "Stanford University"
+      course = "MScEng in Applied Computer Science"
+      institution = "AGH University of Science and Technology"
       year = 2012
-
-    [[params.about.education]]
-      course = "MEng in Artificial Intelligence"
-      institution = "Massachusetts Institute of Technology"
-      year = 2009
-
-    [[params.about.education]]
-      course = "BSc in Artificial Intelligence"
-      institution = "Massachusetts Institute of Technology"
-      year = 2008
 
   # Selected Publications section.
   # Section will only be displayed if there are publications with `selected = true` in their `+++` preamble.
@@ -108,22 +97,22 @@ googleAnalytics = ""
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
-
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
-
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link = "mailto:lukasz@lukaszr.com"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/gcushen"
+    link = "//github.com/lukaszroz"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//www.linkedin.com/in/lukaszrozycki"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/LukRozycki"
 
 
 # Navigation Links
@@ -135,26 +124,11 @@ googleAnalytics = ""
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications"
-  weight = 2
-
-[[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
-
-[[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
-
-[[menu.main]]
-  name = "Teaching"
-  url = "#teaching"
-  weight = 5
-
-[[menu.main]]
   name = "Contact"
   url = "#contact"
   weight = 6
+
+[[menu.main]]
+  name = "Resume"
+  url = "lukasz_rozycki.pdf"
+  weight = 7
