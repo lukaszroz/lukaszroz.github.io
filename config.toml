@@ -16,7 +16,7 @@ theme = "academic"
   role = "Software Engineer"
 # organization = "Academy Petroleum Industries"
   avatar = "portrait.jpg"
-  email = "lukasz@lukaszr.com"
+  email = "web@lukaszr.com"
   address = "Edmonton, Alberta, Canada."
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
@@ -97,7 +97,7 @@ theme = "academic"
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:lukasz@lukaszr.com"
+    link = "mailto:web@lukaszr.com"
 
   [[params.social]]
     icon = "github"
